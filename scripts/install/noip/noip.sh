@@ -1,3 +1,4 @@
+#!/bin/bash 
 mkdir /home/pi/noip
 cd /home/pi/noip
 wget http://www.no-ip.com/client/linux/noip-duc-linux.tar.gz
