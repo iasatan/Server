@@ -7,3 +7,4 @@ How to use:
 * bash mp3.sh
 
 The script will self delete after it finnished
+Use wisely, it will delete everything that isn't MP3
