@@ -6,5 +6,5 @@ How to use:
 * set the artsits.txt location in the script
 * bash mp3.sh
 
-The script will self delete after it finnished
+The script will self delete after it finnished.
 Use wisely, it will delete everything that isn't MP3
