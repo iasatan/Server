@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function add {
-	echo "$artist"  >> /srv/dev-disk-by-label-120GB/torrent/music/"$title".txt
+	echo "$artist"  >> /srv/dev-disk-by-label-120GB/torrent/Server/scripts/torrent/mp3/music/"$title".txt
 }
 
 function delete {
