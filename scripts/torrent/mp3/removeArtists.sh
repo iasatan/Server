@@ -1,10 +1,10 @@
 #!/bin/bash
 function delete {
-	echo "$@"
+	echo "removed bad artist" "$artist"
 	rm -f "$@"
 }
 function check {
-	local artist=$(mp3infov2 -p %a "$1")
+	artist=$(mp3infov2 -p %a "$1")
 	return $(grep -c "$artist" /srv/dev-disk-by-label-120GB/torrent/Server/scripts/torrent/mp3/artists.txt)
 }
 function iterate {
