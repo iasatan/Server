@@ -7,3 +7,4 @@ find . -type f -iname \*mix* -delete -print
 find . -type f -iname \*edit* -delete -print
 find . -type f -iname \*remix* -delete -print
 find . -type f -iname \*disney* -delete -print
+find . -type f -iname \*acoustic* -delete -print

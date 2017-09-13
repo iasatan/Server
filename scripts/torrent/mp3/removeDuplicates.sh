@@ -10,8 +10,8 @@ function delete {
 }
 
 function check {
-	local artist=$(mp3infov2 -p %a "$1")
-	local title=$(mp3infov2 -p %t "$1")
+	artist=$(mp3infov2 -p %a "$1")
+	title=$(mp3infov2 -p %t "$1")
 	return $(grep -cs "$title" /srv/dev-disk-by-label-120GB/Server/scripts/torrent/mp3/music/"$artist".txt)
 }
 
