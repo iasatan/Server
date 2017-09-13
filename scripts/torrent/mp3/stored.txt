@@ -41,3 +41,4 @@
 /srv/dev-disk-by-label-120GB/torrent/MP3 NEW RELEASES 2017 WEEK 22 - [GloDLS]
 /srv/dev-disk-by-label-120GB/torrent/MP3 NEW RELEASES 2017 WEEK 23 - [GloDLS]
 /srv/dev-disk-by-label-120GB/torrent/MP3 NEW RELEASES 2017 WEEK 24 - [GloDLS]
+/srv/dev-disk-by-label-120GB/torrent/MP3 NEW RELEASES 2017 WEEK 36 - [GloDLS]
