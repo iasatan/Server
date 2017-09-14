@@ -1,11 +1,12 @@
 #!/bin/bash
 
 function add {
+	echo "$artist added"
 	echo "$artist"  >> /srv/dev-disk-by-label-120GB/torrent/Server/scripts/torrent/mp3/music/"$title".txt
 }
 
 function delete {
-	echo "$@"
+	echo "$@"" deleted"
 	rm -f "$@"
 }
 
