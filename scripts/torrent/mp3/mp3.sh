@@ -1,5 +1,5 @@
 #!/bin/bash
-if [[ $(grep -c "$PWD" ../Server/scripts/torrent/mp3/stored.txt) -lt 1]]; then
+if [[ $(grep -c "$PWD" ../Server/scripts/torrent/mp3/stored.txt) -lt 1 ]]; then
     vcgencmd measure_temp
     echo "removeNonMusic"
     bash ../Server/scripts/torrent/mp3/removeNonMusic.sh
