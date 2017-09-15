@@ -18,6 +18,7 @@ if [[ $(grep -c "$PWD" ../Server/scripts/torrent/mp3/stored.txt) -lt 1 ]]; then
     directory=$PWD
     echo $PWD >> ../Server/scripts/torrent/mp3/stored.txt
     cd ../Server
+    echo "commiting to git"
     git add .
     git commit -m "$directory"" added"
     git push --all
