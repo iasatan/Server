@@ -2,18 +2,18 @@
 
 function add {
 	echo "$artist added"
-	echo "$artist"  >> /srv/dev-disk-by-label-120GB/torrent/Server/scripts/torrent/mp3/music/"$title".txt
+	echo "$title"  >> /srv/dev-disk-by-label-120GB/torrent/Server/scripts/torrent/mp3/music/"$artist".txt
 }
 
 function delete {
-	echo "$@"" deleted"
+	echo "$@ duplicate deleted"
 	rm -f "$@"
 }
 
 function check {
 	artist=$(mp3infov2 -p %a "$1")
 	title=$(mp3infov2 -p %t "$1")
-	return $(grep -cs "$title" /srv/dev-disk-by-label-120GB/Server/scripts/torrent/mp3/music/"$artist".txt)
+	return $(grep -c "$title" /srv/dev-disk-by-label-120GB/Server/scripts/torrent/mp3/music/"$artist".txt)
 }
 
 function iterate {
