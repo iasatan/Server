@@ -34,3 +34,6 @@
 /srv/dev-disk-by-label-120GB/torrent/MP3 NEW RELEASES 2017 WEEK 32 - [GloDLS]
 /srv/dev-disk-by-label-120GB/torrent/MP3 NEW RELEASES 2017 WEEK 24 - [GloDLS]
 /srv/dev-disk-by-label-120GB/torrent/MP3 NEW RELEASES 2017 WEEK 36 - [GloDLS]
+/srv/dev-disk-by-label-120GB/torrent/Billboard Hot 100 Singles Chart (26th Aug 2017)
+/srv/dev-disk-by-label-120GB/torrent/Billboard Hot 100 Singles Chart (12th Aug 2017) (Mp3 320kbps) [Hunter]
+/srv/dev-disk-by-label-120GB/torrent/Billboard Hot 100 Singles Chart (16th Sep 2017) (Mp3 320kbps) [Hunter]
