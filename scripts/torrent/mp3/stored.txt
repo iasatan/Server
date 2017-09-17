@@ -39,3 +39,4 @@
 /srv/dev-disk-by-label-120GB/torrent/Billboard Hot 100 Singles Chart (12th Aug 2017) (Mp3 320kbps) [Hunter]
 /srv/dev-disk-by-label-120GB/torrent/Billboard Hot 100 Singles Chart (16th Sep 2017) (Mp3 320kbps) [Hunter]
 /srv/dev-disk-by-label-120GB/torrent/Billboard Hot 100 Singles Chart (15th July 2017) (Mp3 320kbps) [Hunter] {786zx}
+/srv/dev-disk-by-label-120GB/torrent/Billboard Hot 100 Singles Chart (10th October 2015) RZ-RG [MP3-320KBPS] [GloDLS]
