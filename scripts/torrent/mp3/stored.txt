@@ -68,3 +68,4 @@
 /srv/dev-disk-by-label-120GB/torrent/Billboard Hot 100 Singles Chart (28th March 2015) ~iTake~ [GloDLS]
 /srv/dev-disk-by-label-120GB/torrent/Billboard Hot 100 Singles Chart (Week 45) [07 November 2015] RZ-RG [MP3-320Kbps] [sn3h1t87] [GloDLS]
 /srv/dev-disk-by-label-120GB/torrent/Billboard Hot 100 Singles Chart (07 Mar 2015) ~iTake~ [GloDLS]
+/srv/dev-disk-by-label-120GB/torrent/Billboard Hot 100 Singles Chart (22 Nov 2014) Mp3 @ CBR 320 Kbps [AryaN_L33T]
