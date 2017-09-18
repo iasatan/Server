@@ -7,7 +7,7 @@ function add {
 
 function delete {
 	function delete {
-	if [[ "$artist" != "" ]]; then
+	if [[ -z "$artist" ]]; then
 		echo "$@ duplicate deleted"
 		rm -f "$@"
 	fi
