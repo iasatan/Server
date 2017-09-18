@@ -57,3 +57,4 @@
 /srv/dev-disk-by-label-120GB/torrent/Billboard Hot 100 ,03 Sep {1337X}-Faddy665
 /srv/dev-disk-by-label-120GB/torrent/Billboard Hot 100 (2016-03-05) [MP3-320kbps][GLODLS]
 /srv/dev-disk-by-label-120GB/torrent/Billboard Hot 100 Singles Chart (01st August 2015) [MP3-320KBPS] [H4CKUS] [GloDLS]
+/srv/dev-disk-by-label-120GB/torrent/Billboard Hot 100 Singles Chart (03rd October 2015) RZ-RG [MP3-320KBPS] [GloDLS]
