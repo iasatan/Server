@@ -72,3 +72,4 @@
 /srv/dev-disk-by-label-120GB/torrent/Billboard Hot 100 Singles Chart [2nd May 2015] ~iTake~ [GloDLS]
 /srv/dev-disk-by-label-120GB/torrent/Billboard Hot 100 Singles Chart [06th June 2015] [2015] [MP3-320KBPS] ~H4CKUS~ [GloDLS]
 /srv/dev-disk-by-label-120GB/torrent/Billboard Hot 100 Singles Chart [9th May 2015] ~iTake~ [GloDLS]
+/srv/dev-disk-by-label-120GB/torrent/Billboard Hot 100 Singles Chart [11 April 2015] ~iTake~ [GloDLS]
