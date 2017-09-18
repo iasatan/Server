@@ -6,8 +6,12 @@ function add {
 }
 
 function delete {
-	echo "$@ duplicate deleted"
-	rm -f "$@"
+	function delete {
+	if [[ "$artist" != "" ]]; then
+		echo "$@ duplicate deleted"
+		rm -f "$@"
+	fi
+}
 }
 
 function check {
