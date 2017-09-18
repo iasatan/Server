@@ -1,6 +1,7 @@
 #!/bin/bash
 
 function add {
+	sleep 1
 	echo "$artist added"
 	echo "$title"  >> /srv/dev-disk-by-id-ata-WDC_WD10EFRX-68FYTN0_WD-WCC4J4APRZR8-part1/red/music/Server/scripts/torrent/mp3/music/"$artist".txt
 }
