@@ -5,7 +5,7 @@ function delete {
 }
 function check {
 	artist=$(mp3infov2 -p %a "$1")
-	return $(grep -c "$artist" /srv/dev-disk-by-label-120GB/torrent/Server/scripts/torrent/mp3/artists.txt)
+	return $(grep -c "$artist" /srv/dev-disk-by-id-ata-WDC_WD10EFRX-68FYTN0_WD-WCC4J4APRZR8-part1/red/music/Server/scripts/torrent/mp3/artists.txt)
 }
 function iterate {
 	for f in "."/*
