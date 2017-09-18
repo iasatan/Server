@@ -13,7 +13,7 @@ function delete {
 function check {
 	artist=$(mp3infov2 -p %a "$1")
 	title=$(mp3infov2 -p %t "$1")
-	return $(grep -c "$title" /srv/dev-disk-by-label-120GB/Server/scripts/torrent/mp3/music/"$artist".txt)
+	return $(grep -cs "$title" /srv/dev-disk-by-label-120GB/Server/scripts/torrent/mp3/music/"$artist".txt)
 }
 
 function iterate {
