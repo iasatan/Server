@@ -30,7 +30,11 @@ function iterate {
 				iterate
 				cd ..
 			elif [[ -f "$f" ]]; then
-				check "$f" && delete "$f" || add
+			if [[ check "$f" -gt 0]]; then
+				delete "$f"
+			else 
+				add "$f"
+				#check "$f" && delete "$f" || add 
 			fi
 		done
 }
