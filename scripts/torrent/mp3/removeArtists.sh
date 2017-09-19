@@ -1,5 +1,6 @@
 #!/bin/bash
 function delete {
+	artist=$(mp3infov2 -p %a "$@")
 	echo "removed bad artist" "$artist"
 	rm -f "$@"
 }
