@@ -1,5 +1,5 @@
 #!/bin/bash
-if [[ $(grep -c "$PWD" /srv/dev-disk-by-id-ata-WDC_WD10EFRX-68FYTN0_WD-WCC4J4APRZR8-part1/red/music/Server/scripts/torrent/mp3/stored.txt) -lt 1 ]]; then
+if [[ $(grep -c "$PWD##*/" /srv/dev-disk-by-id-ata-WDC_WD10EFRX-68FYTN0_WD-WCC4J4APRZR8-part1/red/music/Server/scripts/torrent/mp3/stored.txt) -lt 1 ]]; then
     vcgencmd measure_temp
     echo "removeNonMusic"
     bash /srv/dev-disk-by-id-ata-WDC_WD10EFRX-68FYTN0_WD-WCC4J4APRZR8-part1/red/music/Server/scripts/torrent/mp3/removeNonMusic.sh
@@ -15,8 +15,8 @@ if [[ $(grep -c "$PWD" /srv/dev-disk-by-id-ata-WDC_WD10EFRX-68FYTN0_WD-WCC4J4APR
     vcgencmd measure_temp
     echo "removeEmptyDirs"
     find . -type d -empty -delete -print
-    directory=$PWD
-    echo $PWD >> /srv/dev-disk-by-id-ata-WDC_WD10EFRX-68FYTN0_WD-WCC4J4APRZR8-part1/red/music/Server/scripts/torrent/mp3/stored.txt
+    directory=${PWD##*/}
+    echo "$directory" >> /srv/dev-disk-by-id-ata-WDC_WD10EFRX-68FYTN0_WD-WCC4J4APRZR8-part1/red/music/Server/scripts/torrent/mp3/stored.txt
     cd /srv/dev-disk-by-id-ata-WDC_WD10EFRX-68FYTN0_WD-WCC4J4APRZR8-part1/red/music/Server
     echo "commiting to git"
     git add .
