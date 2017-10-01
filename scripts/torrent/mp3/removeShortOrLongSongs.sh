@@ -11,7 +11,8 @@ function iterate {
 				iterate
 				cd ..
 			elif [[ -f "$f" ]]; then
-                length = $(mp3info -p %s "$f")
+                local lenght=$(mp3info -p %S "$f")
+				#echo "$lenght"
 				if [[ "$lenght" -lt 120 || "$lenght" -gt 300 ]]; then
                 delete "$f"
                 fi
