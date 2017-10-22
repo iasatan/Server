@@ -22,6 +22,7 @@ if [[ $(grep -c "$PWD##*/" /srv/dev-disk-by-id-ata-WDC_WD10EFRX-68FYTN0_WD-WCC4J
     echo "$directory" >> /srv/dev-disk-by-id-ata-WDC_WD10EFRX-68FYTN0_WD-WCC4J4APRZR8-part1/red/music/Server/scripts/torrent/mp3/stored.txt
     cd /srv/dev-disk-by-id-ata-WDC_WD10EFRX-68FYTN0_WD-WCC4J4APRZR8-part1/red/music/Server
     echo "commiting to git"
+    git pull
     git add .
     git commit -m "$directory"" added"
     git push --all
