@@ -23,7 +23,11 @@ hugemeals.com
 hugereaction.com
 twitter.com
 www.rad-x.hu
+e.crashlytics.com
+events.appsflyer.com
+reports.crashlytics.com
 #xiaomi
+api.sec.miui.com
 tracking.intl.miui.com
 us.find.api.micloud.xiaomi.net
 us.statusapi.micloud.xiaomi.net
@@ -33,4 +37,7 @@ api.ad.xiaomi.com
 port.sec.intl.miui.com
 global.market.xiaomi.com
 resolver.msg.xiaomi.net
-
+ccc.sys.intl.xiaomi.com
+globalapi.ad.xiaomi.com
+sdkconfig.ad.intl.xiaomi.com
+sdkconfig.ad.xiaomi.com
