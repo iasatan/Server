@@ -19,3 +19,5 @@ function iterate {
 		done
 }
 iterate
+directory=${PWD##*/}
+ echo "$directory" >> /media/iasatan/846543cd-d9c6-4eb5-8c8c-aeee3951834e/music/Server/scripts/torrent/mp3/storedGood.txt

@@ -19,5 +19,5 @@ if [[ $(grep -c "$PWD##*/" /media/iasatan/846543cd-d9c6-4eb5-8c8c-aeee3951834e/m
     git pull
     git add .
     git commit -m "$directory"" added"
-    git push --all
+    git push
 fi
