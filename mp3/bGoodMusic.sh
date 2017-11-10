@@ -3,7 +3,7 @@
 function add {
 	artist=$(mp3infov2 -p %a "$1")
 	title=$(mp3infov2 -p %t "$1")
-	echo "$title"  >> /media/iasatan/846543cd-d9c6-4eb5-8c8c-aeee3951834e/music/Server/scripts/torrent/mp3/goodMusic/"$artist".txt
+	echo "$title"  >>/media/iasatan/846543cd-d9c6-4eb5-8c8c-aeee3951834e/linuxScripts/mp3/goodMusic/"$artist".txt
 }
 
 function iterate {
@@ -20,4 +20,4 @@ function iterate {
 }
 iterate
 directory=${PWD##*/}
- echo "$directory" >> /media/iasatan/846543cd-d9c6-4eb5-8c8c-aeee3951834e/music/Server/scripts/torrent/mp3/storedGood.txt
+ echo "$directory" >> /media/iasatan/846543cd-d9c6-4eb5-8c8c-aeee3951834e/linuxScripts/mp3/storedGood.txt
