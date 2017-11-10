@@ -1,8 +1,8 @@
 #!/bin/bash
-basedir = "/media/iasatan/846543cd-d9c6-4eb5-8c8c-aeee3951834e/linuxScripts/mp3";
+basedir="/media/iasatan/846543cd-d9c6-4eb5-8c8c-aeee3951834e/linuxScripts/mp3";
 if [[ $(grep -c "$PWD##*/" "$basedir"/stored.txt) -lt 1 ]]; then
     echo "removeNonMusic"
-    bash "$basedir"/removeNonMusic.sh
+    bash $basedir/removeNonMusic.sh
     echo "removeArtists"
     bash "$basedir"/removeArtists2.sh "$basedir"/artists.txt
 	echo "removeShortOrLongMusic"
