@@ -1,2 +1,1 @@
-# Server
-Scripts and solutions for my home server
+Various self written scripts for my desktop and server 
