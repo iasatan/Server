@@ -3,7 +3,16 @@
 function add {
 	artist=$(mp3infov2 -p %a "$1")
 	title=$(mp3infov2 -p %t "$1")
-	echo "$title"  >> /mnt/846543cd-d9c6-4eb5-8c8c-aeee3951834e/linuxScripts/mp3/music/"$artist".txt
+	 if [[ "$artist" == *"Various"* ]]; then
+	 	 if [[ "$title" == *" - "* ]]; then
+	 	 	IFS="-" read -a music <<< "$title"
+	 	 	artist="${music[0]}"
+	 	 	title="${music[1]}"
+	 	 fi
+	 fi
+	artist=$(echo "$artist" | tr '[:upper:]' '[:lower:]' | tr -dc '[:alpha:]')
+	title=$(echo "$title" | tr '[:upper:]' '[:lower:]' | tr -dc '[:alpha:]')
+	echo "$title"  >> /mnt/846543cd-d9c6-4eb5-8c8c-aeee3951834e/linuxScripts/mp3/simpleMusic/"$artist".txt
 }
 
 function delete {
@@ -17,7 +26,9 @@ function delete {
 function check {
 	artist=$(mp3infov2 -p %a "$1")
 	title=$(mp3infov2 -p %t "$1")
-	echo $(grep -c "$title" /mnt/846543cd-d9c6-4eb5-8c8c-aeee3951834e/linuxScripts/mp3/music/"$artist".txt)
+	artist=$(echo "$artist" | tr '[:upper:]' '[:lower:]' | tr -dc '[:alpha:]')
+	title=$(echo "$title" | tr '[:upper:]' '[:lower:]' | tr -dc '[:alpha:]')
+	echo $(grep -c "$title" /mnt/846543cd-d9c6-4eb5-8c8c-aeee3951834e/linuxScripts/mp3/simpleMusic/"$artist".txt)
 }
 
 function iterate {
