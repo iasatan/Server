@@ -1,1 +1,1 @@
-Various self written scripts for my desktop and server 
+Various self written scripts and stuff for my linux computers

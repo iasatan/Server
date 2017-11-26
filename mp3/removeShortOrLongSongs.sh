@@ -13,7 +13,7 @@ function iterate {
 			elif [[ -f "$f" ]]; then
                 local lenght=$(mp3info -p %S "$f")
 				#echo "$lenght"
-				if [[ "$lenght" -lt 120 || "$lenght" -gt 300 ]]; then
+				if [[ "$lenght" -lt 150 || "$lenght" -gt 300 ]]; then
                 delete "$f"
                 fi
 			fi
