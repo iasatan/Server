@@ -3,3 +3,4 @@ metal
 hiphop
 disney
 latin
+reggae
