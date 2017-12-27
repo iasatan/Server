@@ -4,3 +4,4 @@ instantreplay
 instantreplayversion
 thisisit
 relightmyfire
+relightmyfiresingleversion
