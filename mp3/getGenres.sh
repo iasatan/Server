@@ -2,12 +2,12 @@
 
 function add {
 	genre=$(mp3infov2 -p %g "$1")
-	echo "$genre"  >> /mnt/846543cd-d9c6-4eb5-8c8c-aeee3951834e/linuxScripts/mp3/goodGenres.txt
+	echo "$genre"  >> /home/iasatan/NonSynced/linuxScripts/mp3/goodGenres.txt
 }
 
 function check {
 	genre=$(mp3infov2 -p %g "$1")
-	echo $(grep -c "$genre" /mnt/846543cd-d9c6-4eb5-8c8c-aeee3951834e/linuxScripts/mp3/goodGenres.txt)
+	echo $(grep -c "$genre" /home/iasatan/NonSynced/linuxScripts/mp3/goodGenres.txt)
 }
 
 function iterate {

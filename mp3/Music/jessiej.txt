@@ -6,3 +6,5 @@ pricetag
 bangbang
 pricetagclean
 notmyex
+queenclean
+pricetag

@@ -10,7 +10,7 @@ function delete {
 function check {
 	genre=$(mp3infov2 -p %g "$1")
 	genre=$(echo "$genre" | tr '[:upper:]' '[:lower:]' | tr -dc '[:alpha:]')
-    return $(grep -c "$genre" /mnt/846543cd-d9c6-4eb5-8c8c-aeee3951834e/linuxScripts/mp3/badGenres.txt)
+    return $(grep -c "$genre" /home/iasatan/NonSynced/linuxScripts/mp3/badGenres.txt)
 }
 
 function iterate {
