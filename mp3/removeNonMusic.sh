@@ -9,3 +9,4 @@ find . -type f -iname \*"(*remix*)"* -delete -print
 find . -type f -iname \*disney* -delete -print
 find . -type f -iname \*"(acoustic)"* -delete -print
 find . -type f -iname \*"(live)"* -delete -print
+find . -type f -iname \*"(live"* -delete -print
