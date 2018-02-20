@@ -1,19 +1,19 @@
 #!/bin/bash
 basedir="/home/iasatan/NonSynced/linuxScripts/mp3";
 if [[ $(grep -c "$PWD##*/" "$basedir"/stored.txt) -lt 1 ]]; then
-    echo "removeNonMusic\n\n"
+    echo "removeNonMusic-------------------------------------------------------------------------"
     bash $basedir/removeNonMusic.sh
-    echo "removeArtists\n\n"
+    echo "removeArtists-------------------------------------------------------------------------"
     bash "$basedir"/removeArtists2.sh "$basedir"/artists.txt
-	echo "removeShortOrLongMusic\n\n"
+	echo "removeShortOrLongMusic-------------------------------------------------------------------------"
     bash "$basedir"/removeShortOrLongSongs.sh
-    echo "removeArtists2\n\n"
+    echo "removeArtists2-------------------------------------------------------------------------"
     bash "$basedir"/removeArtists.sh
-    echo "Remove Bad Genres\n\n"
+    echo "Remove Bad Genres-------------------------------------------------------------------------"
     bash "$basedir"/removeBadGenres.sh
-    echo "removeDuplicates\n\n"
+    echo "removeDuplicates-------------------------------------------------------------------------"
     bash "$basedir"/removeDuplicates.sh
-    echo "removeEmptyDirs\n\n"
+    echo "removeEmptyDirs-------------------------------------------------------------------------"
     find . -type d -empty -delete -print
     directory=${PWD##*/}
     echo "$directory" >> "$basedir"/stored.txt

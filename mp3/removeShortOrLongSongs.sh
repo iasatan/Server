@@ -14,7 +14,7 @@ function iterate {
                 local lenght=$(mp3info -p %S "$f")
 				#echo "$lenght"
 				if [[ "$lenght" -lt 150 || "$lenght" -gt 300 ]]; then
-                delete "$f"
+                    delete "$f"
                 fi
 			fi
 		done
