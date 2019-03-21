@@ -19,12 +19,12 @@ apt -y remove shotwell
 apt -y remove shotwell-common
 apt -y remove synapse
 apt -y remove plank
-apt -y remove  brasero*
+apt -y remove brasero*
 apt -y install git
-apt -y install maven
-apt -y install vrms
-apt -y install deborphan
-apt -y install texstudio
+#apt -y install maven
+#apt -y install vrms
+#apt -y install deborphan
+#apt -y install texstudio
 apt -y install kolourpaint
 
 apt autoremove
