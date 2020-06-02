@@ -1,35 +1,68 @@
 #!/bin/bash
 
-cd /home/iasatan/HDD/MoveIt
-for f in "."/*
+iphonex=1334
+iphoney=750
+fullhdx=1920
+fullhdy=1080
+
+defaultx="$iphonex"
+defaulty="$iphoney"
+
+echo "$defaultx"
+echo "$defaulty"
+#cd /home/iasatan/HDD/MoveIt
+
+for f in *.JPG
 	do
+    	echo "$f"
 		picture=$(identify "$f")
 		array=($picture)
-		size=$(tr 'x' ' ' <<<"${array[2]}")
+		size=$(tr 'x' ' ' <<<"${array[3]}")
 		size=($size)
-
 		x=${size[0]}
 		y=${size[1]}
 		if (( x > y )); then
-			if (( x > 1334 )); then
-				if (( y > 750 )); then
-					#echo "$f good"
-					convert "$f" -resize 1334 "$f"
+			if (( x > "$defaultx" )); then
+				if (( y > "$defaulty" )); then
+					echo "$f good"
+					convert "$f" -resize "$defaultx" "$f"
+					mv "$f" mini/"$f"
 				fi
 			fi
 		elif (( x < y )); then
-			if (( y > 1334 )); then
-				if (( x > 750 )); then
-					#echo "$f good"
-					convert "$f" -resize x1334 "$f"
+			if (( y > "$defaultx" )); then
+				if (( x > "$defaulty" )); then
+					echo "$f good"
+					convert "$f" -resize x"$defaultx" "$f"
+					mv "$f" mini/"$f"
 				fi
 			fi
 		fi
-		#if [[ x > y ]] && [[ x > 1334 ]] && [[ y > 750 ]]; then
-		#	echo "$f $size"
-		#	convert "$f" -resize 1334 "$f"
-		#elif [[ y>x && x>750 && y>1334 ]]; then
-		#	convert "$f" -resize 750\> "$f"
-		#fi
-
+	done
+for f in *.jpg
+	do
+    	echo "$f"
+		picture=$(identify "$f")
+		array=($picture)
+		size=$(tr 'x' ' ' <<<"${array[3]}")
+		size=($size)
+		x=${size[0]}
+		y=${size[1]}
+		if (( x > y )); then
+			if (( x > "$defaultx" )); then
+				if (( y > "$defaulty" )); then
+					echo "$f good"
+					convert "$f" -resize "$defaultx" "$f"
+					mv "$f" mini/"$f"
+				fi
+			fi
+		elif (( x < y )); then
+			if (( y > "$defaultx" )); then
+				if (( x > "$defaulty" )); then
+					echo "$f good"
+					convert "$f" -resize x"$defaultx" "$f"
+					mv "$f" mini/"$f"
+				fi
+			fi
+		fi
 	done
